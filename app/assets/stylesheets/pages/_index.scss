@@ -1,2 +1,9 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "show";
+@import "cocktails_index";
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(30deg, #001c80 0%, #543478 16%, #7d506e 33%, #9f6e63 50%, #c08e54 66%, #e0ae3d 83%, #ffd000 100%);
+}

@@ -1,0 +1,26 @@
+<div class="container">
+  <br>
+  <h1>Our best cocktails (<%= Cocktail.count %>)</h1>
+
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-4 mb-3">
+
+      <%= link_to cocktail_path(cocktail) do %>
+        <div class="card-trip">
+          <img class="card-img-top" src="<%= cocktail.photo %>" />
+          <div class="card-trip-infos">
+            <div>
+              <h2><%= cocktail.name %></h2>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
